@@ -1,5 +1,5 @@
 # selecting the python version
-FROM python:3.11
+FROM python:3.8-slim
 # exposing the port where the app will run
 EXPOSE 9000
 
