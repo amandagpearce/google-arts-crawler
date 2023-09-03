@@ -29,6 +29,7 @@ def create_app(db_url=None):  # factory pattern
         "sqlite:///database.db",  # default to sqlite if no database_url
     )
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+
     db.init_app(app)  # initializes sqlalchemy
     migrate = Migrate(app, db)  # noqa
     api = Api(app)
@@ -39,3 +40,9 @@ def create_app(db_url=None):  # factory pattern
     api.register_blueprint(ImageBlueprint)
 
     return app
+
+
+if __name__ == "__main__":
+    # Run the app with debug mode on, and specify a port
+    app = create_app()
+    app.run(debug=True, port=8000)
