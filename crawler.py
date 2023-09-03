@@ -1,7 +1,7 @@
 from google_images_search import GoogleImagesSearch
 
 
-def get_artwork_imageUrl(query):
+def get_artwork_image_url(query):
     # params are
     # Googles programmable search engine API key
     # Search Engine ID from google's programmable search engine controlpanel
