@@ -10,3 +10,5 @@ RUN pip install -r requirements.txt
 COPY . .
 # say what commands will run the container
 CMD ["flask", "run", "--host", "0.0.0.0", "--port", "9000"]
+
+## flask run --host 0.0.0.0 --port 9000

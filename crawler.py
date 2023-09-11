@@ -24,6 +24,10 @@ def get_artwork_image_url(query):
     }
 
     gis.search(search_params=search_params)
+    print(gis.results())
     result = gis.results()[0]  # Get the first image result
+
+    print("result.url")
+    print(result.url)
 
     return result.url if result else None
