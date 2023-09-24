@@ -5,7 +5,8 @@ Projeto criado como componente extra do MVP da disciplina de Back-end avançado 
 ## O que é?
 Web Crawler construído em Python que busca as urls das imagens de obras do site Google Arts and Culture. 
 
-### Instalação com o Docker
+### Rodando o projeto com Docker
+1. Clone o projeto
 2. Na raiz do projeto, crie a imagem:
 ```bash
   docker build -t g-arts-service .
@@ -13,6 +14,6 @@ Web Crawler construído em Python que busca as urls das imagens de obras do site
 
 3. Rode a imagem criada:
 ```bash
-  docker run -p 5000:5000 g-arts-service
+  docker run -p 9000:9000 g-arts-service
 ```
 
