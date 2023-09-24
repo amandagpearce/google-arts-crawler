@@ -1,12 +1,16 @@
+import os
+from dotenv import load_dotenv
 from google_images_search import GoogleImagesSearch
 
 
 def get_artwork_image_url(query):
-    # params are
+    load_dotenv()
     # Googles programmable search engine API key
+    search_engine_key = os.getenv("PROGRAMMABLE_SEARCH_ENGINE_API_KEY")
     # Search Engine ID from google's programmable search engine controlpanel
-    gis = GoogleImagesSearch(
-    )
+    search_engine_id = os.getenv("SEARCH_ENGINE_ID")
+
+    gis = GoogleImagesSearch(search_engine_key, search_engine_id)
 
     search_params = {
         "q": query,
@@ -24,10 +28,8 @@ def get_artwork_image_url(query):
     }
 
     gis.search(search_params=search_params)
-    print(gis.results())
-    result = gis.results()[0]  # Get the first image result
+    first_result = gis.results()[0]
 
-    print("result.url")
-    print(result.url)
+    print("result.url", first_result.url)
 
-    return result.url if result else None
+    return first_result.url if first_result else None
