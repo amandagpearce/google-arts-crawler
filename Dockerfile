@@ -5,7 +5,7 @@ EXPOSE 9000
 
 COPY requirements.txt .
 # install requirements
-RUN pip install -r requirements.txt
+RUN pip install -r docker_requirements.txt
 # copy everything (first .) to the directory we are at (second .)
 COPY . .
 # say what commands will run the container
