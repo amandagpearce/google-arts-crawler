@@ -3,9 +3,9 @@ FROM python:3.8-slim
 # exposing the port where the app will run
 EXPOSE 9000
 
-COPY requirements.txt .
+COPY docker_requirements.txt .
 # install requirements
-RUN pip install -r docker_requirements.txt
+RUN pip install --no-cache-dir -r docker_requirements.txt
 # copy everything (first .) to the directory we are at (second .)
 COPY . .
 # say what commands will run the container
