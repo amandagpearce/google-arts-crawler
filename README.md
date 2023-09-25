@@ -9,9 +9,11 @@ API Rest que utiliza a Google's Programmable Search Engine da API Custom Search 
 Primeiramente é necessário gerar uma API Key como descrito na [documentação](https://developers.google.com/custom-search/v1/introduction?hl=pt-br). Com a API Key e a search engine ID criadas, crie um arquivo `.env` que irá conter essas informações, como no exemplo abaixo:
 
 `
+```bash
 PROGRAMMABLE_SEARCH_ENGINE_API_KEY="suakey"
 SEARCH_ENGINE_ID="suaid"
-`
+```
+
 - Substitua `suakey` e `suaid` pelos seus dados. Após a criação da API Key, os dados podem ser conferidos e obtidos no [painel da Google](https://programmablesearchengine.google.com/controlpanel/all).
 
 ### Instalação com Docker
