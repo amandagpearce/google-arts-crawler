@@ -8,7 +8,6 @@ API Rest que utiliza a Google's Programmable Search Engine da API Custom Search 
 ## Arquivo .env 
 Primeiramente é necessário gerar uma API Key como descrito na [documentação](https://developers.google.com/custom-search/v1/introduction?hl=pt-br). Com a API Key e a search engine ID criadas, crie um arquivo `.env` que irá conter essas informações, como no exemplo abaixo:
 
-`
 ```bash
 PROGRAMMABLE_SEARCH_ENGINE_API_KEY="suakey"
 SEARCH_ENGINE_ID="suaid"
@@ -52,8 +51,9 @@ A aplicação gerencia um banco de dados sqlite com a seguinte tabela:
 
 ## Licensa e critérios de busca de imagem 
 A busca de imagens utiliza a licensa Creative Commons como definido nos argumentos de busca do script:
-`
-    search_params = {
+
+```bash
+  search_params = {
         "q": query,
         "num": 1,  # Number of images to fetch
         "safe": "high",  # Safety level (options: high, medium, off)
@@ -67,4 +67,4 @@ A busca de imagens utiliza a licensa Creative Commons como definido nos argument
             "cc_nonderived"
         ),
     }
-`
+```
