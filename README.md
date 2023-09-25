@@ -50,7 +50,7 @@ A aplicação gerencia um banco de dados sqlite com a seguinte tabela:
 - imageUrl é o que é retornado da pesquisa no Google Images.
 
 ## Licensa e critérios de busca de imagem 
-A busca de imagens utiliza a licensa Creative Commons como definido nos argumentos de busca do script:
+A busca de imagens é realizada através de uma `query` contendo `artwork_title` e `artwork_artist` que são enviados no request da componente [B - Art refs api](https://github.com/amandagpearce/art-refs-api). A imagem retornada obedece aos critérios da licensa Creative Commons como definido nos argumentos de busca do script:
 
 ```bash
   search_params = {
