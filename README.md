@@ -31,11 +31,16 @@ SEARCH_ENGINE_ID="suaid"
 ### Instalação sem Docker
 1. Clone o projeto
 2. Cole na raiz do projeto o arquivo `.env` preenchido, como descrito na seção anterior 
-3. Na raiz do projeto, rode o seguinte comando:
+3. Crie e ative um ambiente virtual
+4. Na raiz do projeto, faça a instalação das dependências com o comando:
+```bash
+  pip install requirements.txt
+```
+5. Na raiz do projeto, rode o projeto com o seguinte comando:
 ```bash
   flask run --host 0.0.0.0 --port 9000
 ```
-4. Acesse a documentação no Swagger em `http://localhost:9000/doc`
+6. Acesse a documentação no Swagger em `http://localhost:9000/doc`
 
 ## Banco de dados 
 A aplicação gerencia um banco de dados sqlite com a seguinte tabela:
