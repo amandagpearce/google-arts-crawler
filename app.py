@@ -16,7 +16,7 @@ def create_app(db_url=None):  # factory pattern
     CORS(app)
 
     app.config["PROPAGATE_EXCEPTIONS"] = True
-    app.config["API_TITLE"] = "Google Arts Crawler REST API"
+    app.config["API_TITLE"] = "Google Image Service REST API"
     app.config["API_VERSION"] = "v1"
     app.config["OPENAPI_VERSION"] = "3.0.3"
     app.config["OPENAPI_URL_PREFIX"] = "/"
