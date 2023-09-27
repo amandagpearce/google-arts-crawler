@@ -17,13 +17,13 @@ def get_artwork_image_url(query):
         "num": 1,  # Number of images to fetch
         "safe": "high",  # Safety level (options: high, medium, off)
         "fileType": "jpg|png",  # Limit search to JPEG and PNG files
-        "size": "large",  # Filter for large images
+        "size": "medium",  # Filter for large images
         "rights": (  # Creative Commons licenses
-            "cc_publicdomain|"
-            "cc_attribute|"
-            "cc_sharealike|"
+            # "cc_publicdomain|"
+            # "cc_attribute|"
+            # "cc_sharealike|"
             "cc_noncommercial|"
-            "cc_nonderived"
+            # "cc_nonderived"
         ),
     }
 
